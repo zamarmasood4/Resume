@@ -1,0 +1,189 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Muhammad Zamar
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{fontawesome5}
+
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Muhammad Zamar} \\ \vspace{1pt}
+    \small +92-301-5894547 $|$ 
+    \href{mailto:zamarmasood4@gmail.com}{\underline{zamarmasood4@gmail.com}} $|$ 
+    \href{https://zamarmasood.vercel.app/}{\underline{Portfolio}} $|$
+    \href{https://github.com/zamarmasood4}{\underline{GitHub}} $|$
+    \href{https://www.linkedin.com/in/zamar-masood-06b1942b3/}{\underline{LinkedIn}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\small{Full Stack Developer specializing in web application development, frontend frameworks, and backend systems. Proficient in React.js, Next.js, Node.js, Express.js, and Flask with hands-on experience in cloud deployment (AWS, Vercel), database management (Supabase, PostgreSQL, MongoDB), API development, and AI integration (Gemini API, ChatGPT API, OCR). Proven ability to deliver scalable solutions, optimize performance, and collaborate in agile development environments.}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {COMSATS University Islamabad}{Vehari, Punjab, Pakistan}
+      {Bachelor of Science in Computer Science}{\textit{\small Jan 2022 -- Jan 2026}}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Full Stack Web Developer}{Vehari, Punjab, Pakistan}
+      {Freelance}{\textit{\small May 2024 -- Dec 2024}}
+      \resumeItemListStart
+        \resumeItem{Engineered 5+ full-stack applications using React.js, Next.js, Node.js, and MongoDB serving 100+ users}
+        \resumeItem{Implemented authentication with Supabase and JWT, reducing failures by 95\% and improving retention by 40\%}
+        \resumeItem{Designed 20+ RESTful APIs achieving 50\% faster load times and 90\% response accuracy}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+  
+    \resumeProjectHeading
+      {\textbf{AI-Powered Smart Search Platform \href{https://mysearchai.vercel.app/}{\faLink}} $|$ \emph{React.js, Tailwind CSS, Supabase, Node.js, AWS}}{\textit{\small Sept. 2025}}
+      \resumeItemListStart
+        \resumeItem{Engineered search platform scraping 10+ data sources with 85\% accuracy rate}
+        \resumeItem{Implemented AI-driven recommendations achieving 88\% user satisfaction}
+        \resumeItem{Deployed on AWS infrastructure maintaining 99\% uptime for 500+ concurrent users}
+        \resumeItem{Optimized API response times to under 3 seconds through efficient caching}
+        % \resumeItem{Deployed backend on AWS EC2 with load balancing and auto-scaling, achieving 95\% faster API response times and reducing server response time from 5s to 2s, a 60\% performance improvement with 99.8\% uptime}
+      \resumeItemListEnd
+      
+    \resumeProjectHeading
+      {\textbf{AI-Study Genius \href{https://thestudymate.netlify.app/}{\faLink}} $|$ \emph{Flask, Gemini API, ChatGPT API, OCR (Tesseract), SQLite}}{\textit{\small Aug. 2025}}
+      \resumeItemListStart
+        \resumeItem{Developed comprehensive e-learning platform supporting 75+ textbooks and 300+ active students}
+        \resumeItem{Implemented adaptive learning algorithms achieving 92\% quiz accuracy through personalized content}
+        \resumeItem{Built OCR module for converting handwritten notes to digital summaries with real-time processing}
+        \resumeItem{Created document-aware chatbot that provides answers and explanations from selected textbooks/PDFs}
+        \resumeItem{Designed automated summary generator for YouTube videos, PDFs, and lecture notes}
+        \resumeItem{Architected exam generator analyzing 100+ past papers to produce 500+ customized practice questions}
+      \resumeItemListEnd
+      
+    \resumeProjectHeading
+      {\textbf{Gold Investment Platform \href{https://mygoldinvest.netlify.app/}{\faLink}} $|$ \emph{React.js, Node.js, Supabase, WebSocket, NOWPayments API}}{\textit{\small May. 2024}}
+      \resumeItemListStart
+        \resumeItem{Developed investment platform processing \$5000+ transactions with automated portfolio management}
+        \resumeItem{Achieved 98\% accuracy in investment tracking for 200+ active investors}
+        \resumeItem{Integrated NOWPayments API with webhook verification, automating 95\% of payments}
+        \resumeItem{Established real-time chat support using WebSocket, handling 500+ daily messages}
+        \resumeItem{Generated React admin dashboards for portfolio tracking, improving efficiency by 60\%}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+
+%-----------CERTIFICATIONS-----------
+\section{Certificates}
+\resumeSubHeadingListStart
+\resumeSubheading
+    {Web Development \href{https://www.cert.devtown.in/verify/Z1UHmnU}{\faLink}}{\textit{\small Jan. 2024}}
+    {Google Developer Student Clubs}{}
+    \resumeItemListStart
+      \resumeItem{Learned modern frontend development practices including responsive design and component-based UI development across 2+ frameworks}
+    \resumeItemListEnd
+    
+  \resumeSubheading
+    {Backend Web Development \href{https://www.cert.devtown.in/verify/1t7WwM}{\faLink}}{\textit{\small Apr. 2023}}
+    {DevTown}{}
+    \resumeItemListStart
+      \resumeItem{Gained hands-on experience in REST API development, OAuth/JWT authentication, and backend architecture serving 100+ users with Node.js}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Frontend}{: React.js, Next.js, JavaScript, TypeScript, HTML5, CSS3, Tailwind CSS, Responsive Web Design} \\
+\textbf{Backend}{: Node.js, Express.js, Flask, Django, RESTful APIs, Microservices, API Integration, Server-Side Rendering} \\
+\textbf{AI \& ML}{: Gemini API, ChatGPT API, OpenAI API, Optical Character Recognition (OCR), NLP} \\
+\textbf{DevOps \& Cloud}{: AWS (EC2, S3), Vercel, Docker, CI/CD, Cloud Deployment} \\
+\textbf{Databases}{: MongoDB, PostgreSQL, MySQL, Supabase, Firebase, Real-Time Database, Database Design}
+    }}
+ \end{itemize}
+
+\end{document}
